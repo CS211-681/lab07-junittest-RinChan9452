@@ -32,14 +32,16 @@ class StudentTest {
     }
 
   @Test
-    void testIsId(){
+  @DisplayName("ทดสอบการเทียบID")
+  void testIsId(){
         Student s = new Student("6xxxxxxxx", "StudentTest");
         assertTrue(s.isId("6xxxxxxxx"));
   }
 
   @Test
-    void testIsNameContain(){
-        Student s = new Student("6xxxxxxxx", "StudentTest");
+  @DisplayName("ทดสอบการเทียบชื่อ")
+  void testIsNameContain(){
+        Student s = new Student("6xxxxxxxx", "King Joe");
         assertTrue(s.isNameContains("King Joe"));
   }
 
